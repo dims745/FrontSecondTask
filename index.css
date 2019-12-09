@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+}
+.logo {
+    font-family: Mplus;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+}
+header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: url('./images/headerBG.png');
+    color: #FCFCFC;
+}
+.headerUp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-bottom: 5px;
+    margin: 30px;
+}
+nav > a:hover {
+    background-size: 100% 2px;
+}
+.phoneInfo {
+    display: flex;
+}
+.phoneInfo > img {
+    margin-right: 5px;
+}
