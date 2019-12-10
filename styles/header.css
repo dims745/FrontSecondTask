@@ -1,0 +1,117 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+}
+header {
+    padding-top: 4%;
+    padding-bottom: 9%;
+    background-image: url('../images/headerBG.png');
+    background-size: cover;
+    color: #FCFCFC;
+}
+.headerUp {
+    margin-left: 10%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-bottom: 5px;
+    margin: 30px;
+    cursor: default;
+}
+nav > a:hover {
+    background-size: 100% 2px;
+}
+.phoneInfo {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.4px;
+    letter-spacing: 2px;
+    display: flex;
+}
+.phoneInfo > img {
+    margin-right: 5px;
+}
+.mediumPart {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+}
+.headLine {
+    display: flex;
+    flex-direction: column;
+}
+.headLine > span {
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 86px;
+    line-height: 118px;
+    text-transform: none;
+    letter-spacing: 6px;
+}
+.headLine > .headLine1 {
+    margin-bottom: 5%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.headLine > .redColor {
+    color: #f64666;
+}
+header > .mediumPart > .scroll {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    writing-mode: vertical-lr;
+    font-family: Mplus;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    white-space: nowrap;
+}
+.scroll > img {
+    margin-top: 20px;
+    width: 15px;
+}
+.headerBottom {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    width: max-content;
+    padding-left: 10%;
+    padding-right: 6%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    white-space: nowrap;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+}
+.headerBottom > img {
+    margin-left: 7%;
+    margin-right: 7%;
+}

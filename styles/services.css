@@ -1,0 +1,53 @@
+.services {
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 12%;
+    display: flex;
+    flex-direction: column;
+}
+.services > .header1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+.services > .header2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    color: #30233D;
+    padding-bottom: 4%;
+}
+.services > .serviceGrid {
+    display: grid;
+    grid-column-gap: 5%;
+    grid-row-gap: 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.services > .serviceGrid > div {
+    display: flex;
+    flex-direction: column;
+}
+.services > .serviceGrid img {
+    width: fit-content;
+}
+.services > .serviceGrid img + span {
+    margin-bottom: 5%;
+    margin-top: 7%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #30233D;
+}
+.services > .serviceGrid img + span + span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #776C82;
+}
