@@ -1,0 +1,94 @@
+.intro {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 12%;
+    display: flex;
+    flex-direction: column;
+}
+.intro > .header1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+.intro > .header2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    color: #30233D;
+    padding-bottom: 4%;
+}
+.intro > .serviceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.intro > .serviceGrid > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15%;
+    margin-right: 10%;
+}
+.intro > .serviceGrid img {
+    width: fit-content;
+}
+.intro > .serviceGrid img + span {
+    margin-bottom: 5%;
+    margin-top: 7%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #30233D;
+}
+.intro > .serviceGrid img + span + span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #776C82;
+}
+.intro > .quote {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.intro .photo1 {
+    width: 50vh;
+    position: absolute;
+    left: 64%;
+    top: -20%;
+}
+.intro .photo1 + div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    padding-left: 7%;
+    padding-right: 13%;
+    color: #FCFCFC;
+    background-color: #5E239D;
+    font-family: Noticia Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22.5px;
+    line-height: 40px;
+}
+.intro .name {
+    margin-left: 7%;
+    margin-top: 5%;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+}
+.intro .name :first-child {
+   color: #F61067;
+}
+.intro .name :last-child {
+    color: #333;
+}
