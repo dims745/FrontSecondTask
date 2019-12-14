@@ -1,0 +1,68 @@
+.stages {
+    padding: 11%;
+    color: #FCFCFC;
+    background: #30124E;
+}
+.stages .headers {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.stages .headers > :first-child {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+    margin-bottom: 1%;
+}
+.stages .headers > :last-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+}
+.stages .stagesBox {
+    display: flex;
+    justify-content: space-between;
+}
+.stages .stagesBox > * {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 6%;
+    padding-left: 3%;
+    padding-right: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.2px;
+    line-height: 26px;
+}
+.stages .stagesBox > * > :first-child {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+.stages .stagesBox > :hover {
+    background: #F61067;
+}
+.stages .stagesBox > :hover > :first-child {
+    color: inherit;
+}
+.stages .stagesBox > * > :nth-child(2n) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
