@@ -1,0 +1,34 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    text-align: center;
+    align-items: center;
+}
+.subscribe > :first-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    color: #30233D;
+}
+.subscribe > span + span {
+    margin-top: 1%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #776C82;
+}
+.subscribe > form {
+    width: 50%;
+}
+.subscribe > form > [type="email"] {
+    border: hidden;
+    width: 65%;
+}
+.subscribe > form > [type="submit"] {
+    border: hidden;
+    width: 34%;
+    background: linear-gradient(180deg, rgba(242, 242, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}

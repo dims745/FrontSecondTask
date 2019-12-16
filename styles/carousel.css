@@ -1,4 +1,4 @@
-.people > .carousel .arrow {
+.people .carousel .arrow {
   width: 36px;
   height: 36px;
   padding: 0;
@@ -15,14 +15,14 @@
   -ms-user-select: none; 
   user-select: none;
 }
-.people > .carousel .arrow:focus {
+.people .carousel .arrow:focus {
   outline: none;
 }
-.people > .carousel .arrow:hover {
+.people .carousel .arrow:hover {
   background: #ccc;
   cursor: pointer;
 }
-.people > .carousel ul {
+.people .carousel ul {
   height: max-content;
   width: 9999px;
   margin: 0;
@@ -32,12 +32,12 @@
   left: 0px;
   transition: left 0.5s;
 }
-.people > .carousel ul li {
+.people .carousel ul li {
   text-align: center;
   display: inline-block;
   width: 50vw;
 }
-.people > .carousel ul li > span {
+.people .carousel ul li > span {
   font-style: italic;
   font-weight: normal;
   font-size: 32px;
@@ -45,17 +45,17 @@
   text-align: center;
   color: #30233D;
 }
-.people > .carousel ul li > div {
+.people .carousel ul li > div {
   margin-top: 5%;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 29px;
 }
-.people > .carousel ul li > div :first-child {
+.people .carousel ul li > div :first-child {
   color: #F61067;
 }
-.people > .carousel {
+.people .carousel {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +63,7 @@
   box-sizing: border-box;
   padding: 5px;
 }
-.people > .carousel .in-frame {
+.people .carousel .in-frame {
   width: 50vw;
   height: max-content;
   display: inline-block;

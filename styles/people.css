@@ -1,5 +1,59 @@
 .people {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.people > .faces {
+    height: 380px;
+    width: 100%;
+}
+.people > .faces > * {
+    position: absolute;
+}
+.people > .faces > #face1 {
+    width: 30vw;
+    height: 30vw;
+    left: calc(50% - 15vw);
+    top: -8vw;
+}
+.people > .faces > #face2 {
+    width: 14%;
+    left: 3%;
+    top: 32.5%;
+}
+.people > .faces > #face3 {
+    width: 16%;
+    left: 14%;
+    top: 7%;
+}
+.people > .faces > #face4 {
+    width: 13%;
+    left: 25%;
+    top: 25%;
+}
+.people > .faces > #face5 {
+    width: 15%;
+    left: 65%;
+    top: 23%;
+}
+.people > .faces > #face6 {
+    width: 13%;
+    left: 75%;
+    top: 13%;
+}
+.people > .faces > #face7 {
+    width: 15%;
+    left: 86%;
+    top: 0%;
+}
+.people > .faces > #face8 {
+    width: 13%;
+    left: 87%;
+    top: 27.5%;
+}
+.people > .faces #quotes {
+    width: 8%;
+    left: calc(50% - 4%);
+    top: 19vw;
 }

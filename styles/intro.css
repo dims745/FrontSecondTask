@@ -58,17 +58,18 @@
     position: relative;
 }
 .intro .photo1 {
-    width: 50vh;
+    width: 50vw;
+    max-width: 300px;
     position: absolute;
     left: 64%;
-    top: -20%;
+    bottom: 0em;
 }
 .intro .photo1 + div {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 65%;
-    height: 200px;
+    min-height: 200px;
     padding-left: 7%;
     padding-right: 13%;
     color: #FCFCFC;

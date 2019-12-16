@@ -4,6 +4,7 @@
 <head>
   <title>second task</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/intro.css">
   <link rel="stylesheet" href="./styles/features.css">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="./styles/stages.css">
   <link rel="stylesheet" href="./styles/people.css">
   <link rel="stylesheet" href="./styles/carousel.css">
+  <link rel="stylesheet" href="./styles/subscribe.css">
 </head>
 
 <body>
@@ -260,9 +262,20 @@
     </section>
     <section class="people">
       <div class="faces">
+        <img src="images/faces/face1.png" id="face1">
+        <img src="images/faces/face2.png" id="face2">
+        <img src="images/faces/face3.png" id="face3">
+        <img src="images/faces/face4.png" id="face4">
+        <img src="images/faces/face5.png" id="face5">
+        <img src="images/faces/face6.png" id="face6">
+        <img src="images/faces/face7.png" id="face7">
+        <img src="images/faces/face8.png" id="face8">
+        <img src="images/quotes.png" id="quotes">
       </div>
       <div class="carousel" id="carousel">
-        <button class="arrow" onclick="move('left')"><span>←</span></button>
+        <button class="arrow" onclick="move('left')">
+          <span>←</span>
+        </button>
         <div class="in-frame">
           <ul>
             <li>
@@ -319,11 +332,26 @@
             </li>
           </ul>
         </div>
-        <button class="arrow" onclick="move('right')"><span>→</span></button>
+        <button class="arrow" onclick="move('right')">
+          <span>→</span>
+        </button>
+        <script src="./scripts/carrousel.js"></script>
       </div>
-      <script src="./scripts/carrousel.js"></script>
+    </section>
+    <section class="subscribe">
+      <span>
+        Subscribe to our newsletter
+      </span>
+      <span>
+        Cras pulvinar mattis nunc sed blandit.
+      </span>
+      <form>
+        <input type="email" class="email">
+        <input type="submit" class="submit" value="Subscribe" onclick="event.preventDefault()">
+      </form>
     </section>
   </main>
+  <!-- <script>alert(window.innerWidth)</script> -->
 </body>
 
 </html>
