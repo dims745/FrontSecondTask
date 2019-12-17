@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./styles/people.css">
   <link rel="stylesheet" href="./styles/carousel.css">
   <link rel="stylesheet" href="./styles/subscribe.css">
+  <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
           (01) 666 - 693 - 456
         </span>
       </div>
-      <img height="16px" width="27px" src="./images//MenuIcon.png">
+      <img height="16px" width="27px" src="./images/MenuIcon.png">
     </div>
     <div class="mediumPart">
       <div class="headLine">
@@ -55,10 +56,10 @@
           great business
         </span>
       </div>
-      <div class="scroll">
+      <a class="scroll" href="#intro">
         <span>Scroll to see more</span>
         <img src="./images/scrollIcon.png">
-      </div>
+      </a>
     </div>
     <div class="headerBottom">
       <span>
@@ -69,7 +70,7 @@
   </header>
   <main>
     <section class="intro">
-      <span class="header1">
+      <span class="header1"  id="intro">
         What we can do?
       </span>
       <span class="header2">
@@ -273,9 +274,7 @@
         <img src="images/quotes.png" id="quotes">
       </div>
       <div class="carousel" id="carousel">
-        <button class="arrow" onclick="move('left')">
-          <span>←</span>
-        </button>
+        <button class="arrow left" onclick="move('right')"></button>
         <div class="in-frame">
           <ul>
             <li>
@@ -332,9 +331,7 @@
             </li>
           </ul>
         </div>
-        <button class="arrow" onclick="move('right')">
-          <span>→</span>
-        </button>
+        <button class="arrow right" onclick="move('left')"></button>
         <script src="./scripts/carrousel.js"></script>
       </div>
     </section>
@@ -346,11 +343,87 @@
         Cras pulvinar mattis nunc sed blandit.
       </span>
       <form>
-        <input type="email" class="email">
-        <input type="submit" class="submit" value="Subscribe" onclick="event.preventDefault()">
+        <input type="email" class="email" placeholder="enter email">
+        <button onclick="this.parent.submit()">
+          Subscribe <div></div>
+        </button>
       </form>
     </section>
   </main>
+  <footer>
+    <div>
+      <div class="title">
+        <span>
+          Lopper
+        </span>
+        <span>
+          Eu augue ut lectus arcu bibendum at.
+        </span>
+      </div>
+      <div class="menu">
+        <span>
+          Menu
+        </span>
+        <nav>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">News</a>
+          <a href="">Gallery</a>
+          <a href="">Contact</a>
+        </nav>
+      </div>
+      <div class="services">
+        <span>
+          Services
+        </span>
+        <nav>
+          <a href="">Lorem</a>
+          <a href="">Ipsum</a>
+          <a href="">Dolor</a>
+          <a href="">Sit Amet</a>
+        </nav>
+      </div>
+      <div class="contacts">
+        <span>
+          Contact us
+        </span>
+        <div>
+          <img src="./images/mail.png" alt="Email">
+          <span> contact@lop.com</span>
+        </div>
+        <div>
+          <img src="./images/mobileIcon.png" alt="Mobile" width="9px">
+          <span> 856 - 693 - 456</span>
+        </div>
+      </div>
+      <div class="social">
+        <span>
+          Follow us
+        </span>
+        <div>
+          <a href="">
+            <img src="./images/twitter.png" alt="Twitter">
+          </a>
+          <a href="">
+            <img src="./images/facebook.png" alt="Facebook">
+          </a>
+          <a href="">
+            <img src="./images/instagram.png" alt="Instagram">
+          </a>
+          <a href="">
+            <img src="./images/youtube.png" alt="Youtube">
+          </a>
+          <a href="">
+            <img src="./images/M_.png" alt="Another M">
+          </a>
+        </div>
+      </div>
+    </div>
+    <span>
+      © 2019 Lopper by mariuszdaniel. All right reserved.
+    </span>
+  </footer>
   <!-- <script>alert(window.innerWidth)</script> -->
 </body>
 

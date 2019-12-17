@@ -3,24 +3,27 @@
   height: 36px;
   padding: 0;
   border-radius: 18px;
-  border: 1px solid gray;
+  border:hidden;
   font-size: 24px;
   line-height: 24px;
-  color: #444;
   background: inherit;
   display: inline-block;
   vertical-align: middle;
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
+  background-image: url("../images/ArrowNormal.png");
 }
 .people .carousel .arrow:focus {
   outline: none;
 }
 .people .carousel .arrow:hover {
-  background: #ccc;
+  background-image: url("../images/ArrowHover.png");
+  transform: matrix(-1, 0, 0, 1, 0, 0);
   cursor: pointer;
+}
+.people .carousel .arrow.left {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.people .carousel .arrow.left:hover {
+  transform: none;
 }
 .people .carousel ul {
   height: max-content;
@@ -36,6 +39,8 @@
   text-align: center;
   display: inline-block;
   width: 50vw;
+  padding: 5px;
+  box-sizing: border-box;
 }
 .people .carousel ul li > span {
   font-style: italic;
@@ -69,10 +74,4 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
-  vertical-align: middle;  
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-  pointer-events: none;
 }

@@ -1,5 +1,9 @@
 body {
+    width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden;  
+}
+html {
+    scroll-behavior: smooth;
 }

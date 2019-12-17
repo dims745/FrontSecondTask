@@ -1,6 +1,12 @@
 let ul = null;
+let working = false;
 
 function move(direction) {
+  if(working) {
+    setTimeout(() => move(direction), 100);
+    return;
+  }
+  working = true;
   let inFrame = document.body.querySelector('#carousel .in-frame').getBoundingClientRect();
   let left = ul.getBoundingClientRect().x - inFrame.x;
   let maxLeft = document.body.querySelector('#carousel li:last-child');
@@ -17,5 +23,6 @@ function move(direction) {
     if (left <= 0) ul.style.left = left + 'px';
     break;
   }
+  setTimeout(() => working = false, 500);
 };
 ul = document.body.querySelector('#carousel ul');
