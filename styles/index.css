@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap');
 body {
     width: 100vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
     margin: 0px;
-    overflow-x: hidden;  
+    overflow-x: hidden; 
+    font-size: initial;
 }
 html {
     scroll-behavior: smooth;
 }
+img {
+    max-width: 100%;
+}
+header, main, footer {overflow-x: hidden; }

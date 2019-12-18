@@ -8,17 +8,18 @@
 .intro > .header1 {
     font-style: normal;
     font-weight: 800;
-    font-size: 12.6px;
-    line-height: 26px;
-    letter-spacing: 6px;
+    font-size: 0.7em;
+    line-height: 1.4em;
+    letter-spacing: 0.4em;
     text-transform: uppercase;
     color: #F61067;
 }
 .intro > .header2 {
     font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
+    font-weight: 600;
+    font-size: 2.4em;
     line-height: 67px;
+    letter-spacing: 0.05em;
     color: #30233D;
     padding-bottom: 4%;
 }
@@ -39,15 +40,16 @@
     margin-bottom: 5%;
     margin-top: 7%;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.05em;
     line-height: 27px;
     color: #30233D;
 }
 .intro > .serviceGrid img + span + span {
     font-style: normal;
     font-weight: normal;
-    font-size: 16.2px;
+    font-size: 0.95em;
     line-height: 26px;
     color: #776C82;
 }
@@ -77,19 +79,40 @@
     font-family: Noticia Text;
     font-style: italic;
     font-weight: normal;
-    font-size: 22.5px;
+    font-size: 1.4em;
     line-height: 40px;
 }
 .intro .name {
     margin-left: 7%;
     margin-top: 5%;
-    font-weight: 800;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 29px;
 }
 .intro .name :first-child {
-   color: #F61067;
+    font-weight: 1000;
+    color: #F61067;
 }
 .intro .name :last-child {
     color: #333;
+}
+@media (max-width: 600px) {
+    .intro .name {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro > .serviceGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .intro .photo1 + div {
+        font-size: 1.4em;
+    }
+}
+@media (max-width:1000px) and (min-width:600px) {
+    .intro .photo1 {
+        width: 50vw;
+        max-width: 260px;
+        position: absolute;
+        left: 64%;
+        bottom: 0em;
+    }
 }

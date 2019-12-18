@@ -7,8 +7,8 @@
 }
 .clients > .title :first-child {
     font-style: normal;
-    font-weight: 800;
-    font-size: 12.6px;
+    font-weight: bolder;
+    font-size: 0.7em;
     line-height: 26px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -16,8 +16,8 @@
 }
 .clients > .title :last-child {
     font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
+    font-weight: bold;
+    font-size: 2.6em;
     line-height: 67px;
     color: #30233D;
 }
@@ -26,9 +26,8 @@
 }
 .clients > :last-child > * {
     width: 50%;
-    max-width: 50%;
 }
-.clients > :last-child .description {
+.clients .description {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -36,32 +35,34 @@
     padding-right: 7%;
     background: #150433;
 }
-.clients > :last-child .description > :first-child {
+.clients .description > :first-child {
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: bold;
+    font-size: 2em;
     line-height: 53px;
+    letter-spacing: 0.01em;
     color: #F61067;
 }
-.clients > :last-child .description > * {
+.clients .description > * {
     margin-bottom: 5%;
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 1em;
     line-height: 29px;
     color: #FCFCFC;
 }
 .clients .description > :last-child {
     margin-bottom: 0%;
 }
-.clients .clientsGrid {
+.clients .clientsList {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding: 8%;
     padding-top: 3%;
+    padding-bottom: 0%;
 }
-.clients .clientsGrid > :first-child {
+.clients .clientsList > :first-child {
     margin-bottom: 20%;
     font-style: normal;
     font-weight: 800;
@@ -71,11 +72,35 @@
     text-transform: uppercase;
     color: #30233D;
 }
-.clients .clientsGrid > :last-child {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5%;
+.clients .clientsList > :last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
-.clients .clientsGrid > :last-child > * {
-    margin-bottom: 35%;
+.clients .clientsList > :last-child > * {
+    margin: 5%;
+    margin-bottom: 15%;
+}
+@media (max-width: 720px) {
+    .clients > .title {
+        box-sizing: border-box;
+        width: 89%;
+    }
+    .clients > .title :last-child {
+        font-size: 2em;
+    }
+    .clients > :last-child {
+        flex-direction: column;
+    }
+    .clients > :last-child > * {
+        width: 100%;
+    }
+    .clients .clientsList {
+        justify-content: space-between;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .clients .clientsList > :first-child {
+        margin-bottom: 10%;
+    }
 }
