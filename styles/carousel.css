@@ -45,7 +45,7 @@
 .people .carousel ul li > span {
   font-style: italic;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 1.9em;
   line-height: 64px;
   text-align: center;
   color: #30233D;
@@ -53,11 +53,11 @@
 .people .carousel ul li > div {
   margin-top: 5%;
   font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 29px;
 }
 .people .carousel ul li > div :first-child {
+  font-weight: bold;
   color: #F61067;
 }
 .people .carousel {
@@ -74,4 +74,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 760px) {
+  
 }

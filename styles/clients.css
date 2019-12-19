@@ -87,7 +87,7 @@
         width: 89%;
     }
     .clients > .title :last-child {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .clients > :last-child {
         flex-direction: column;

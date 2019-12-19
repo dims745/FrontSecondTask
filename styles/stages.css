@@ -12,8 +12,8 @@
 }
 .stages .headers > :first-child {
     font-style: normal;
-    font-weight: 800;
-    font-size: 12.6px;
+    font-weight: bold;
+    font-size: 0.7em;
     line-height: 26px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -23,7 +23,7 @@
 .stages .headers > :last-child {
     font-style: normal;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 1.6em;
     line-height: 40px;
 }
 .stages .stagesBox {
@@ -41,13 +41,12 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-style: normal;
     font-weight: normal;
-    font-size: 15.2px;
     line-height: 26px;
 }
 .stages .stagesBox > * > :first-child {
     font-style: normal;
     font-weight: 800;
-    font-size: 17px;
+    font-size: 1em;
     line-height: 37px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -62,8 +61,28 @@
 .stages .stagesBox > * > :nth-child(2n) {
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.6em;
     line-height: 40px;
     margin-top: 2%;
     margin-bottom: 5%;
+}
+.stages .stagesBox > * > :last-child {
+    font-size: 0.9em;
+}
+@media (max-width: 760px) {
+    .stages .stagesBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stages .stagesBox > * {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 5%;
+    }
+    .stages .headers {
+        width: 100%;
+    }
+    .stages .headers > :last-child {
+        font-size: 1.2em;
+    }
 }
