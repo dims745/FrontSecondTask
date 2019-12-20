@@ -109,6 +109,11 @@ header .headerBottom > img {
     margin-left: 7%;
     margin-right: 7%;
 }
+.header_iconMenu {
+    height: 16px;
+    width: 27px;
+    cursor: pointer;
+}
 @media (max-width: 761px) {
     header .phoneInfo {
         display: none;

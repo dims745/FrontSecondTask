@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./styles/carousel.css">
   <link rel="stylesheet" href="./styles/subscribe.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/aside.css">
+  <script src="./scripts/aside.js"></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
           (01) 666 - 693 - 456
         </span>
       </div>
-      <img height="16px" width="27px" src="./images/MenuIcon.png">
+      <img class="header_iconMenu" src="./images/MenuIcon.png" onclick="setVision(true)">
     </div>
     <div class="mediumPart">
       <div class="headLine">
@@ -354,88 +356,118 @@
         Cras pulvinar mattis nunc sed blandit.
       </span>
       <form>
-        <input type="email" class="email" placeholder="enter email">
-        <button onclick="this.parent.submit()">
-          Subscribe <div></div>
+        <input name="email" type="email" class="email" placeholder="enter email">
+        <button>
+          <span>Subscribe</span>
+          <div></div>
         </button>
       </form>
     </section>
   </main>
-  <footer>
-    <div>
-      <div class="title">
-        <span>
-          Lopper
-        </span>
-        <span>
-          Eu augue ut lectus arcu bibendum at.
-        </span>
-      </div>
-      <div class="menu">
-        <span>
-          Menu
-        </span>
-        <nav>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Services</a>
-          <a href="">News</a>
-          <a href="">Gallery</a>
-          <a href="">Contact</a>
-        </nav>
-      </div>
-      <div class="services">
-        <span>
-          Services
-        </span>
-        <nav>
-          <a href="">Lorem</a>
-          <a href="">Ipsum</a>
-          <a href="">Dolor</a>
-          <a href="">Sit Amet</a>
-        </nav>
-      </div>
-      <div class="contacts">
-        <span>
-          Contact us
-        </span>
-        <div>
-          <img src="./images/mail.png" alt="Email">
-          <span> contact@lop.com</span>
-        </div>
-        <div>
-          <img src="./images/mobileIcon.png" alt="Mobile" width="9px">
-          <span> 856 - 693 - 456</span>
-        </div>
-      </div>
-      <div class="social">
-        <span>
-          Follow us
-        </span>
-        <div>
-          <a href="">
-            <img src="./images/twitter.png" alt="Twitter">
-          </a>
-          <a href="">
-            <img src="./images/facebook.png" alt="Facebook">
-          </a>
-          <a href="">
-            <img src="./images/instagram.png" alt="Instagram">
-          </a>
-          <a href="">
-            <img src="./images/youtube.png" alt="Youtube">
-          </a>
-          <a href="">
-            <img src="./images/M_.png" alt="Another M">
-          </a>
-        </div>
-      </div>
+  <footer class="footer G_rowBlock">
+    <div class="footer_title G_columnBlock">
+      <span class="footer_title_top">
+        Lopper
+      </span>
+      <span class="footer_title_bottom">
+        Eu augue ut lectus arcu bibendum at.
+      </span>
     </div>
-    <span>
-      © 2019 Lopper by mariuszdaniel. All right reserved.
-    </span>
+    <div class="footer_main G_columnBlock">
+      <div class="footer_TopPart G_rowBlock">
+        <div class="G_columnBlock footer_menu footer_column">
+          <span class="footer_nav">
+            Menu
+          </span>
+          <nav class="footer_nav_links G_columnBlock">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">News</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+          </nav>
+        </div>
+        <div class="G_columnBlock footer_services footer_column">
+          <span class="footer_nav">
+            Services
+          </span>
+          <nav class="footer_nav_links G_columnBlock">
+            <a href="">Lorem</a>
+            <a href="">Ipsum</a>
+            <a href="">Dolor</a>
+            <a href="">Sit Amet</a>
+          </nav>
+        </div>
+        <div class="G_columnBlock footer_contacts footer_column">
+          <span class="footer_nav">
+            Contact us
+          </span>
+          <div class="footer_contact_item">
+            <img src="./images/mail.png" alt="Email">
+            <span class="footer_contact_string">contact@lop.com</span>
+          </div>
+          <div class="footer_contact_item">
+            <img src="./images/mobileIcon.png" alt="Mobile" width="9px">
+            <span class="footer_contact_string">
+              856 - 693 - 456
+            </span>
+          </div>
+        </div>
+        <div class="G_columnBlock footer_social footer_column">
+          <span class="footer_nav footer_social_title">
+            Follow us
+          </span>
+          <div>
+            <a href="">
+              <img src="./images/twitter.png" alt="Twitter">
+            </a>
+            <a href="">
+              <img src="./images/facebook.png" alt="Facebook">
+            </a>
+            <a href="">
+              <img src="./images/instagram.png" alt="Instagram">
+            </a>
+            <a href="">
+              <img src="./images/youtube.png" alt="Youtube">
+            </a>
+            <a href="">
+              <img src="./images/M_.png" alt="Another M">
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="footer_main_footer">
+        © 2019 Lopper by mariuszdaniel. All right reserved.
+      </span>
+    </div>
   </footer>
-  
+  <aside class="aside" onclick="aside_click(event)">
+    <div class="aside_main">
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Gallery</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
   <script>console.log(window.innerWidth)</script>
 </body>
 

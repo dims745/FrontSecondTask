@@ -76,5 +76,12 @@
   overflow: hidden;
 }
 @media (max-width: 760px) {
-  
+  .people .carousel ul li {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 600px) {
+  .people .carousel ul li {
+    font-size: 0.7em;
+  }
 }

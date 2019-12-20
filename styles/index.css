@@ -13,3 +13,10 @@ img {
     max-width: 100%;
 }
 header, main, footer {overflow-x: hidden; }
+.G_columnBlock {
+    display: flex;
+    flex-direction: column;
+}
+.G_rowBlock {
+    display: flex;
+}
