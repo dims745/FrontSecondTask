@@ -1,7 +1,7 @@
 .logo {
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.3em;
     line-height: 43px;
     letter-spacing: 2px;
 }
@@ -24,6 +24,7 @@ header nav a {
     padding-bottom: 5px;
     margin: 30px;
     cursor: default;
+    color: inherit;
 }
 header nav a:hover {
     background-size: 100% 2px;
@@ -31,12 +32,12 @@ header nav a:hover {
 header .phoneInfo {
     font-style: normal;
     font-weight: 800;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 2px;
     display: flex;
 }
 header .phoneInfo > img {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 header .mediumPart {
     display: flex;
@@ -53,15 +54,15 @@ header .headLine > span {
     font-style: normal;
     font-weight: 1000;
     font-size: 5.5em;
-    line-height: 118px;
+    line-height: 100px;
     text-transform: none;
     letter-spacing: 6px;
 }
 header .headLine > .headLine1 {
     margin-bottom: 5%;
     font-style: normal;
-    font-weight: 800;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 0.7em;
     line-height: 30px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -74,10 +75,9 @@ header .scroll {
     align-items: center;
     cursor: default;
     writing-mode: vertical-lr;
-    font-family: Mplus;
     font-style: normal;
     font-weight: 800;
-    font-size: 0.9em;
+    font-size: 0.75em;
     line-height: 26px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -88,21 +88,21 @@ header .scroll {
 }
 header .scroll > img {
     margin-top: 20px;
-    width: 15px;
+    width: 18px;
 }
 header .headerBottom {
     display: flex;
     align-items: center;
     padding: 2%;
+    max-width: 75%;
     width: max-content;
     padding-left: 10%;
     padding-right: 6%;
     border: 1px solid rgba(255, 255, 255, 0.25);
     white-space: nowrap;
-    font-family: Mplus 1p;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1em;
     line-height: 29px;
 }
 header .headerBottom > img {
@@ -114,8 +114,100 @@ header .headerBottom > img {
     width: 27px;
     cursor: pointer;
 }
-@media (max-width: 761px) {
+.header_nav {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+.header_nav > li {
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+}
+.header_nav > li:last-child {
+    margin-right: 0;
+  }
+.header_nav_hidden {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    font-size: 1em;
+}
+.header_nav_main > li:hover > a {
+    position: relative;
+}
+.header_nav_main > li:hover > a:after {
+	display: block;
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	height: 1px;
+	background-color: #FCFCFC;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+.header_nav li:hover .header_nav_hidden {
+    -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      transform: scaleY(1);
+  }
+@media (max-width: 900px) {
+    header nav a {
+        margin: 15px;
+    }
+}
+@media (max-width: 760px) {
+    header nav a {
+        margin: 10px;
+    }
+    header {
+        font-size: 0.9em;
+    }
+    header .headerBottom > img {
+        margin-left: 4%;
+        margin-right: 0%;
+    }
+}
+@media (max-width: 660px) {
     header .phoneInfo {
         display: none;
+    }
+}
+@media (max-width: 600px) {
+    header .headLine > .headLine1 {
+        font-size: 0.8em;
+    }
+    header .headLine > span {
+        font-size: 4em;
+    }
+    header .headerBottom {
+        white-space: normal;
+    }
+    header .headerBottom > img {
+        width: 36px;
+    }
+    header .scroll {
+        margin-top: 30px;
     }
 }
