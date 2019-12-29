@@ -26,3 +26,5 @@ function move(direction) {
   setTimeout(() => working = false, 500);
 };
 ul = document.body.querySelector('#carousel ul');
+
+export default move;

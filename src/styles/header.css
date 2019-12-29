@@ -187,6 +187,10 @@ header .headerBottom > img {
     header .headerBottom > img {
         margin-left: 4%;
         margin-right: 0%;
+        width: 36px;
+    }
+    header .headerBottom {
+        white-space: normal;
     }
 }
 @media (max-width: 660px) {
@@ -200,12 +204,6 @@ header .headerBottom > img {
     }
     header .headLine > span {
         font-size: 4em;
-    }
-    header .headerBottom {
-        white-space: normal;
-    }
-    header .headerBottom > img {
-        width: 36px;
     }
     header .scroll {
         margin-top: 30px;
